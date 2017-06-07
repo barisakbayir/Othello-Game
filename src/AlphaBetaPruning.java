@@ -59,7 +59,7 @@ public class AlphaBetaPruning {
 		    	if (node2.getValue() < node.getBeta()){
 		    		node.setBeta(node2.getValue());
 		    	}
-		    	if(node.getBeta() <= node.getBeta()){
+		    	if(node.getBeta() <= node.getAlpha()){
 		    		break;												// prune nodes condition
 		    	}
 		    }
